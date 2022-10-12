@@ -10,7 +10,7 @@ public class ProxyImplementorI implements I {
         System.out.println("Log: ProxyImplementorI::f()");
         if(i == null) {
             i = new ImplementorI();
-            i.f();
         }
+        i.f();
     }
 }
