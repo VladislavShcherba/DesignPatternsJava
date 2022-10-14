@@ -1,4 +1,4 @@
-package p22Momento;
+package p22Memento;
 
 public class Originator {
     private int state;
@@ -16,14 +16,14 @@ public class Originator {
         return "Originator{ " + state + " }";
     }
 
-    public Momento snapshot() {
-        return new Momento(state);
+    public Memento snapshot() {
+        return new Memento(state);
     }
 
-    public class Momento{
+    public class Memento {
         private int state;
 
-        public Momento(int state) {
+        private Memento(int state) {
             this.state = state;
         }
 
